@@ -1,20 +1,49 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View } from "react-native";
+
+const names = [
+  "Aaran",
+  "Aaren",
+  "Aarez",
+  "Aarman",
+  "Aaron",
+  "Aaron-James",
+  "Aarron",
+  "Aaryan",
+  "Aaryn",
+  "Aayan",
+  "Aazaan",
+  "Abaan",
+  "Abbas",
+  "Abdallah",
+  "Abdalroof",
+  "Abdihakim",
+  "Abdirahman",
+  "Abdisalam",
+  "Abdul",
+  "Abdul-Aziz",
+  "Abdulbasir",
+  "Abdulkadir",
+  "Abdulkarem",
+];
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {names.map((name) => {
+        return <Text>{name}</Text>;
+      })}
     </View>
   );
-}
+ }
+ 
+ 
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#4eb6c2',
     alignItems: 'center',
     justifyContent: 'center',
   },
